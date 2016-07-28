@@ -1,4 +1,4 @@
-# Deeds (Android)
+# Deeds (iOS)
 
 Get rid of your stuff that you don't need. Help someone in need!<br>
 Do a good deed in your community now!<br>

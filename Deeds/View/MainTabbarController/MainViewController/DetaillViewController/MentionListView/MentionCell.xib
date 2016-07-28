@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MentionCellID" id="DCM-vz-ezt" customClass="MentionCell">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="38"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DCM-vz-ezt" id="2zb-bS-quI">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_default.png" translatesAutoresizingMaskIntoConstraints="NO" id="trF-Kp-eVr">
+                        <rect key="frame" x="8" y="6" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="g1u-2S-4kd"/>
+                            <constraint firstAttribute="width" constant="26" id="p1r-NU-Eps"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marcelo Bond" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7It-qM-suC">
+                        <rect key="frame" x="42" y="12" width="238" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.43137254901960786" green="0.44705882352941173" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="trF-Kp-eVr" secondAttribute="centerY" id="I3k-3n-SXK"/>
+                    <constraint firstAttribute="trailing" secondItem="7It-qM-suC" secondAttribute="trailing" constant="8" id="Icq-LY-mOl"/>
+                    <constraint firstAttribute="centerY" secondItem="7It-qM-suC" secondAttribute="centerY" constant="-0.5" id="Jox-fP-VJV"/>
+                    <constraint firstItem="7It-qM-suC" firstAttribute="leading" secondItem="trF-Kp-eVr" secondAttribute="trailing" constant="8" id="kFa-hO-ea1"/>
+                    <constraint firstItem="trF-Kp-eVr" firstAttribute="leading" secondItem="2zb-bS-quI" secondAttribute="leading" constant="8" id="qH5-WS-bfP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="mImgViewUser" destination="trF-Kp-eVr" id="nIf-DK-QMX"/>
+                <outlet property="mLblUsername" destination="7It-qM-suC" id="Jsc-Ov-VcQ"/>
+            </connections>
+            <point key="canvasLocation" x="194" y="201"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user_default.png" width="210" height="210"/>
+    </resources>
+</document>
